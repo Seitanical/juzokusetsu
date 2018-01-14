@@ -20,20 +20,22 @@ document.writeln(test1.sentence + '<br>');
 
 
 //this recreates a list of words based on word-type
+function callNouns (){
 for (i = 0; i < test1.nouns.length; i++) { 
 	for (j= 0; j < test1.nouns.length - 1; j++ ){
 	coordinate.push(test1.nouns[i][j]);
 	};
 	document.writeln(test1.sentence.slice(coordinate[0] - 1, coordinate[1])+ '<br>');
-	coordinate = []
+	coordinate = [] };
 };
 
+function callParticles (){
 for (i = 0; i < test1.particles.length; i++) { 
 	for (j= 0; j < test1.particles.length - 1; j++ ){
 	coordinate.push(test1.particles[i][j]);
 	};
 	document.writeln(test1.sentence.slice(coordinate[0] - 1, coordinate[1]) + '<br>');
-	coordinate = []
+	coordinate = [] };
 };
 
 // call this function to see if selected text is identical to the answer
